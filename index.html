@@ -202,7 +202,7 @@ Forecasting under Scenario Shifts - Garv Patel">
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="garv-p.github.io" target="_blank">Garv Patel</a><sup>*</sup>,</span>
+                <a href="garv-p.github.io" target="_blank">Garv Patel</a></span>
                   </div>
 
 
@@ -239,7 +239,10 @@ Forecasting under Scenario Shifts - Garv Patel">
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Scenario modeling in epidemiology often relies on surrogate models that generate ensembles of possible futures at low computational cost. However, under distribution shifts such as policy interventions, holiday effects, or new variants, these ensemble spreads are frequently miscalibrated, undermining their reliability for public health decision-making. We address this reliability gap by constructing a fast and accurate surrogate model and applying Adaptive Conformal Prediction over Trajectory Ensembles (CP-Traj) to epidemiological forecasting. CP-Traj calibrates entire trajectories by constructing stepwise uncertainty bands that achieve target coverage while remaining as sharp as possible. Using simulated data, we  evaluate CP-Traj on simulation tasks. 
+We demonstrate that our surrogate model reliably reproduces SIR epidemic dynamics across different epidemiological scnearios, achieving low validation error and strong generalization on varying trajectories. 
+However, applying CP-Traj to this setting reveals substantial challenges in maintaining stable and meaningful uncertainty throughout the epidemics trajectory.
+Running CP-Traj with calibration maintains controlled miscoverage parameters but achieves only limited effective coverage (averaging roughly 19%) mostly on the epidemic’s tail. These findings suggest that while CP-Traj provides interpretable calibration behavior, additional methodological advances or more accurate calibration is needed for reliable uncertainty quantification under evolving epidemiological scenarios. 
           </p>
         </div>
       </div>
